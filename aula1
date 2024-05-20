@@ -1,1 +1,30 @@
-# BancoDeDados
+# Aula01 de BancoDeDados
+
+# Como fazer Comentários
+-- As linhas iniciadas com "--" dois traços são comentários que são ignorados e servem para documentar a query
+
+/*
+	Comentários com mais de uma linha são feitos desta forma
+*/
+
+# Todos os comandos devem ser terminados com ";" ponto e vírgula
+-- Criação de banco de dados
+-- Sintaxe: CREATE DATABASE NomeDoBancoDeDados;
+
+-- Exemplo:
+CREATE DATABASE bd2;
+
+# Apagar/Destruição de banco de dados
+-- Sintaxe: DROP DATABASE NomeDoBancoDeDados;
+
+-- Exemplo:
+
+DROP DATABASE bd2;
+
+
+#Revisão dos tipos de dados
+-- Listar tabelas de um banco de dados
+show tables from bd2;
+
+
+
