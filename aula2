@@ -1,0 +1,70 @@
+-- CREATE TABLE --
+
+#Cria uma nova tabela no banco de dados selecionado.
+
+
+-- Sintaxe:
+
+-- TABELA
+/*
+CREATE TABLE NomeDaTabela (
+    coluna1 tipo,
+    coluna1 tipo,
+    coluna1 tipo,
+   ....
+);
+
+-- Exemplo: 
+
+CREATE TABLE clientes (
+    id int primary key auto_increment,
+    nome varchar(100),
+    sobrenome varchar(100),
+    endereco varchar(255),
+    cidade varchar(50),
+    uf varchar(2)
+);
+
+
+-- inserindo valores
+
+INSERT INTO clientes (nome, sobrenome, endereco, cidade, uf) 
+values ('André', 'Neves', 'Rua A', 'Rio de Janeiro', 'RJ');
+
+
+-- RENAME TABLE --
+
+#Renomeia uma tabela do banco de dados selecionado.
+-- Sintaxe: 
+
+-- RENAME TABLE NomeDaTabela; 
+-- Exemplo:
+
+RENAME TABLE clientes TO Meus_Clientes;
+
+-- DROP TABLE --
+
+#Destrói/Apagar uma tabela do banco de dados selecionado.
+-- Sintaxe: 
+
+-- DROP TABLE NomeDaTabela; 
+
+-- Exemplo: 
+
+DROP TABLE clientes; -- deleta a tabela
+
+-- TRUNCATE TABLE --
+#Limpa todos os dados, mas preserva a estrutura da tabela. Também volta o auto_increment para o status inicial.
+
+-- Sintaxe: 
+
+-- TRUNCATE TABLE NomeDaTabela; 
+
+
+-- Exemplo: 
+
+TRUNCATE TABLE clientes;
+
+
+
+
